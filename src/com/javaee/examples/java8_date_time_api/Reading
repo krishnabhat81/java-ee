@@ -1,0 +1,14 @@
+Java 8 - New Date/Time APIs
+===========================
+
+1. Immutable and does not have setter methods (previously java.util.Date was not thread safe, thus developers have to deal with concurrency issue while using date).
+2. More utility methods for date operations (previously Default Date starts from 1900, month starts from 1, and day starts from 0, so no uniformity.).
+3. Domain specific designs (previously timezone issue).
+
+New classes introduced in java.time package:
+1. Local
+2. Zoned
+
+LocalDate, LocalTime and LocalDateTime classes simplify the development where timezones are not required.
+
+===========================
