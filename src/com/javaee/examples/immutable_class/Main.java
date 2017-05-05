@@ -44,5 +44,16 @@ public class Main {
         System.out.println("after changing testMap from accessor methods:" + example.getTestMap());
 
 
+
+        System.out.println("\n --------------- Reflection ;( ------------ \n");
+
+        Class ref = example.getClass();
+        Field fieldName = ref.getDeclaredField("name");
+
+        fieldName.setAccessible(true);
+        fieldName.set(example, "Hacked Name");
+
+        System.out.println("example name after reflection hack: " + example.getName());
+
     }
 }
