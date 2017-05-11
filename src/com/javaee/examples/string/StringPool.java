@@ -1,4 +1,4 @@
-package com.javaee.examples.string_stringpool;
+package com.javaee.examples.string;
 
 /**
  * Created by krishna1bhat on 5/11/17.
