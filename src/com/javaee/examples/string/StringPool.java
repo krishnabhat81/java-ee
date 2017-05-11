@@ -21,5 +21,12 @@ public class StringPool {
         System.out.println("s1 == s2 : " + (s1 == s2) );
         System.out.println("s2 == s3 : " + (s2 == s3) );
 
+        //intern() method puts s3 to String pool
+        s3.intern();
+        System.out.println("After intern() without assigning to s3; s2 == s3 : " + (s2 == s3) );
+        //false becoz, intern() return the String object reference from the string pool, but since we didn't assigned it back to s3
+
+        s3 = s3.intern();
+        System.out.println("After intern() and assigning to s3; s2 == s3 : " + (s2 == s3) );//true
     }
 }
