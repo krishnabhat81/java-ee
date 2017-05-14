@@ -6,3 +6,10 @@ package com.javaee.examples;
 public class Test {
     //blank
 }
+class aa{
+
+}
+//We can’t have more than one public class in a single java source file.
+class bb{
+
+}
