@@ -6,4 +6,11 @@ package com.javaee.examples.java8_lambda;
 @FunctionalInterface
 public interface MyFunctionalInterface {
     boolean check(int n);
+
+    default void myMethod(){
+        System.out.println("Functional interface default method");
+    }
+    static void printMessage(){
+        System.out.println("Functional interface static method");
+    }
 }
