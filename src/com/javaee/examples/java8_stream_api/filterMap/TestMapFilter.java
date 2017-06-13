@@ -32,22 +32,31 @@ public class TestMapFilter {
             System.out.println(entry.getKey() + " : " + entry.getValue().getName());
         }
 
-        System.out.println("------- Java8 ------- \n");
-        //Map -> Stream -> Filter -> String
+        System.out.println("------- Java8 - filtering Map ------- \n");
 
+        //Map -> Stream -> Filter -> String
         String result = map.entrySet().stream()
                 .parallel()//parallelStream()
-                .filter(m -> "Krishna".equals(m.getValue().getName()))
+                .filter(m -> {
+                    System.out.println("filtering");
+                    return "Krishna".equals(m.getValue().getName());
+                })
                 .sequential()//stram()
-                .map(m -> m.getValue().getName().toUpperCase())
+                .map(m -> {
+                    System.out.println("mapping");
+                    return m.getValue().getName().toUpperCase();
+                })
                 .collect(Collectors.joining(", ", "Prefix: ", " :Postfix"));
                 //.collect(Collectors.toCollection(ArrayList::new));
         System.out.println(result);
 
-        //Reduce example...
-        String[] myArray = { "this", "is", "a", "sentence" };
-        String result123 = Arrays.stream(myArray)
-                .reduce("", (a,b) -> a + b);
+        //Map -> Stream -> Filter -> MAP
+        Map<String, User> collect = map.entrySet().stream()
+                .filter(m -> m.getKey().equals("U1") || m.getKey().equals("U2"))
+                .collect(Collectors.toMap(u -> u.getKey(), u -> u.getValue()));
+
+        //Printing map after filtering...
+        collect.forEach((k,v) -> System.out.println(k + " : " + v.getName()));
 
 
     }
