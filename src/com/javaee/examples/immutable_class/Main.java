@@ -16,6 +16,7 @@ public class Main {
         int i = 100;
 
         FinalClassExample example = new FinalClassExample(i, str, hash);
+        FinalClassExample example1 = example.setName("using setter");
 
         //checking example object...
         System.out.println(str == example.getName());
@@ -44,6 +45,10 @@ public class Main {
         System.out.println("after changing testMap from accessor methods:" + example.getTestMap());
 
 
+        System.out.println("\n --------------- Public setter ------------ \n");
+
+        System.out.println(example1.getName());
+        System.out.println(example.getName());
 
         System.out.println("\n --------------- Reflection ;( ------------ \n");
 

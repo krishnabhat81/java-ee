@@ -1,5 +1,7 @@
 package com.javaee.examples.test;
 
+import com.javaee.examples.Emp;
+import com.javaee.examples.Manager;
 import sun.net.www.protocol.http.HttpURLConnection;
 
 import java.lang.reflect.Field;
@@ -9,9 +11,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * Created by krishna1bhat on 6/19/17.
+ * Created by krishna1bhat on 7/02/17.
  */
 public class TestClass {
+
+    static {
+        int x = 0;
+        System.out.println("dfsf");
+    }
 
     public static void main(String[] args){
 
@@ -26,6 +33,13 @@ public class TestClass {
         final Integer pos = Integer.valueOf(3);
         list.remove(pos);
         System.out.println(list);
+
+        Emp e = new Emp();
+        //Manager m = e;//error -- incompatible task
+        Emp nn = new Manager();
+        Manager m = (Manager)e;
+
+
 
 //        String[][] x = new String[1][];
 //        x[0][0] = "Fred";

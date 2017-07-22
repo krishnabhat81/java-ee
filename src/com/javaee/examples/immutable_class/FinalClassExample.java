@@ -40,6 +40,11 @@ public final class FinalClassExample {
         return (HashMap<String, String>) testMap.clone();
     }
 
+    //public setter method----
+    public FinalClassExample setName(String name){
+        return new FinalClassExample(this.id, name, this.getTestMap());
+    }
+
     //Constructor with Deep Copy
     public FinalClassExample(int id, String name, HashMap<String, String> testMap){
         this.id = id;
