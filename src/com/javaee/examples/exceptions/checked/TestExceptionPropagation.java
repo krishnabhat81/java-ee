@@ -10,7 +10,8 @@ package com.javaee.examples.exceptions.checked;
 //and must be handled either by throwing or using try catch in invoker method
 public class TestExceptionPropagation {
     void m(){
-        throw new java.io.IOException("device error");//checked exception
+        //try uncommenting...
+        //throw new java.io.IOException("device error");//checked exception
     }
     void n(){
         m();
