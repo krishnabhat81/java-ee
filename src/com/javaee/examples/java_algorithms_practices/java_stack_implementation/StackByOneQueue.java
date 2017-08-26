@@ -9,7 +9,7 @@ import java.util.Queue;
 public class StackByOneQueue {
     public static void main(String... args){
         //Testing... MyStack
-        
+
     }
 }
 
