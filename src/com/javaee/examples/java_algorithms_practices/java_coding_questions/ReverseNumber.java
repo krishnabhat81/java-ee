@@ -1,4 +1,4 @@
-package com.javaee.examples.java_coding_questions;
+package com.javaee.examples.java_algorithms_practices.java_coding_questions;
 
 /**
  * Created by krishna1bhat on 7/29/17.

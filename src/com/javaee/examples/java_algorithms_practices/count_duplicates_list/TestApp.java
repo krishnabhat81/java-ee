@@ -1,4 +1,4 @@
-package com.javaee.examples.count_duplicates_list;
+package com.javaee.examples.java_algorithms_practices.count_duplicates_list;
 
 import java.util.*;
 

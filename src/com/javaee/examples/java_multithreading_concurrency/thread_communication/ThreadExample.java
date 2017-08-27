@@ -1,4 +1,4 @@
-package com.javaee.examples.thread_communication;
+package com.javaee.examples.java_multithreading_concurrency.thread_communication;
 
 import java.util.Scanner;
 

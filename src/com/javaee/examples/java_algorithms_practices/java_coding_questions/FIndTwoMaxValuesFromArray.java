@@ -1,4 +1,4 @@
-package com.javaee.examples.java_coding_questions;
+package com.javaee.examples.java_algorithms_practices.java_coding_questions;
 
 import java.util.Arrays;
 
