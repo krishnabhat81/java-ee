@@ -1,6 +1,5 @@
 package com.javaee.examples.java_properties_file_examples;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
