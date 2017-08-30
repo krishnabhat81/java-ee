@@ -8,7 +8,7 @@ import java.util.Iterator;
  */
 
 /*
-* Immutable class is good for caching purpose
+* Immutable class is good for caching purpose and
 * Inherently thread-safe
 */
 

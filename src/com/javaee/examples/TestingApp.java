@@ -66,4 +66,5 @@ public class TestingApp {
     public int hashCode() {
         return msg != null ? msg.hashCode() : 0;
     }
+
 }
