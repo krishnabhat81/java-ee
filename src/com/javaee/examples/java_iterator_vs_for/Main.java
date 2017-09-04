@@ -33,7 +33,7 @@ public class Main {
         }
         System.out.println(System.currentTimeMillis() - start);
 
-        //check advanced for loop
+        //check advanced for loop (using iterator internally)
         start = System.currentTimeMillis();
         for (String s : list) {
             sum += s.length();
