@@ -1,13 +1,20 @@
-package com.javaee.examples.java_multithreading_concurrency.sychronized_keyword;
+package com.javaee.examples.java_multithreading_concurrency.method_sychronized_keyword;
 
 /**
  * Created by krishna1bhat on 9/3/17.
  */
 public class AfterSynchronizedKeyword {
     private int count = 0;
+    private Object lock = new Object();
     public static void main(String... args){
         AfterSynchronizedKeyword app = new AfterSynchronizedKeyword();
+        long start = System.currentTimeMillis();
+
         app.doWork();
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("Total Time: " + (end - start));
     }
 
     //look the synchronized method here...

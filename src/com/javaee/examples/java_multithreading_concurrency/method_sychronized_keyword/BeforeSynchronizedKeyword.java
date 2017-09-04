@@ -1,4 +1,4 @@
-package com.javaee.examples.java_multithreading_concurrency.sychronized_keyword;
+package com.javaee.examples.java_multithreading_concurrency.method_sychronized_keyword;
 
 /**
  * Created by krishna1bhat on 9/3/17.
