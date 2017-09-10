@@ -12,7 +12,7 @@ public class LoadPropertiesFileTest {
     public static void main(String[] args){
         Properties properties = new Properties();
 
-        try(InputStream inputStream = new FileInputStream("web/config.properties");){
+        try(InputStream inputStream = new FileInputStream("web/config.properties")){
             properties.load(inputStream);
 
             System.out.println(properties.getProperty("name"));
